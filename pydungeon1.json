@@ -1,0 +1,527 @@
+{
+    "pydungeon": [
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "A1" },
+                                "roomDesc": { "S": "You stand in the dungeon entryway. \nThe walls are worn bricks and only two torches adorn the walls. \nBefore you stands a doorway continuing EAST, deeper into the dungeon." },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "A2" },
+                                "menu2": { "S": "Search" },
+                                "menu2Type": { "S": "search" },
+                                "menu3": { "S": "Rest" },
+                                "menu3Type": { "S": "rest" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "1" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "A2" },
+                                "roomDesc": { "S": "This room appears as a T-junction. \nIt smells of musk and decay. There are doors to the EAST, WEST, and SOUTH." },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "A3" },
+                                "menu2": { "S": "Move South" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "B2" },
+                                "menu3": { "S": "Move West" },
+                                "menu3Type": { "S": "move" },
+                                "menu3NewId": { "S": "A1" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "A3" },
+                                "roomDesc": { "S": "The dreary stone of the room leads to the SOUTH. \nAs well as allowing passage to the WEST towards a rest area." },
+                                "menu1": { "S": "Move West" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "A2" },
+                                "menu2": { "S": "Move South" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "B3" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "A4" },
+                                "roomDesc": { "S": "Bones cover the floor in this room. A \npassage to the SOUTH is clear and the tunnel continues to the EAST." },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "A5" },
+                                "menu2": { "S": "Move South" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "B4" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "0"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "A5" },
+                                "roomDesc": { "S": "An empty room with a rotted throw rug on the floor. \nTo the SOUTH a dark passage looms with screeching noises. \nAn unprepared adventurer may also head back WEST." },
+                                "menu1": { "S": "Move South" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "B5" },
+                                "menu2": { "S": "Move West" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "A4" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "B1" },
+                                "roomDesc": { "S": "This room is a dead end with \na pile of bones present. The only way out is to go back EAST." },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "B2" },
+                                "menu2": { "S": "Search" },
+                                "menu2Type": { "S": "search" },
+                                "menu3": { "S": "Search some more!" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "0"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "0" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "B2" },
+                                "roomDesc": { "S": "You realize this dungeon is built like \na maze as you come to another T interesection. You can go NORTH or \nSOUTH through open passages or open the door to the WEST." },
+                                "menu1": { "S": "Move North" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "A2" },
+                                "menu2": { "S": "Move South" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "C2" },
+                                "menu3": { "S": "Open door and move West" },
+                                "menu3Type": { "S": "move" },
+                                "menu3NewId": { "S": "B1" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "B3" },
+                                "roomDesc": { "S": "A dull and empty room. \nIt is devoid of light and feels damp. A passage to \nthe NORTH and another to the EAST are available." },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "B4" },
+                                "menu2": { "S": "Move North" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "A3" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "B4" },
+                                "roomDesc": { "S": "A creepy room lit by a single torch.\nThe passage to the NORTH is marked with dried bones and a skull \nwhile the path WEST is clear." },
+                                "menu1": { "S": "Move West" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "B3" },
+                                "menu2": { "S": "Move North toward the bones." },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "A4" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "B5" },
+                                "roomDesc": { "S": "The floor is littered with the remains of \nadventurer's who fell to the bats! The only way out \nis back to the NORTH" },
+                                "menu1": { "S": "Move North" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "A5" },
+                                "menu2": { "S": "Search" },
+                                "menu2Type": { "S": "search" },
+                                "menu3": { "S": "Rest after a tough fight." },
+                                "menu3Type": { "S": "rest" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "0"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "0" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "C1" },
+                                "roomDesc": { "S": "This room gives you hope as you see a window! \nBut as you look, it is boarded up and won't budge. \nYou can travel safely to the SOUTH or EAST." },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "C2" },
+                                "menu2": { "S": "Move South" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "D1" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "C2" },
+                                "roomDesc": { "S": "To the WEST is a rickety wooden door. \nThe NORTH leads back in the direction you started." },
+                                "menu1": { "S": "Move West" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "C1" },
+                                "menu2": { "S": "Move North" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "B2" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "C3" },
+                                "roomDesc": { "S": "Yet more bones cover the floors! \nThe SOUTH leads to another bone-filled room while the \nEAST takes you one step closer to the end!" },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "C4" },
+                                "menu2": { "S": "Move South" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "D3" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "0"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "C4" },
+                                "roomDesc": { "S": "After fleeing from the skeleton to the WEST, \nthis long hallway seems almost pleasant. Almost. \nYou look to the EAST and see only darkness." },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "C5" },
+                                "menu2": { "S": "Move West" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "C3" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "C5" },
+                                "roomDesc": { "S": "The room bends to SOUTH and you \nhear the creaking of old bones. Just like the rooms to the WEST, \nthis too is filled with rotten bones." },
+                                "menu1": { "S": "Move West" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "C4" },
+                                "menu2": { "S": "Move South" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "D5" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "D1" },
+                                "roomDesc": { "S": "A long hallway lit with torches on \neither side stretches to the NORTH and SOUTH" },
+                                "menu1": { "S": "Move North" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "C1" },
+                                "menu2": { "S": "Move South" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "E1" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "D2" },
+                                "roomDesc": { "S": "Like so much of the rest of this dungeon, \nskeletons lurk in the room. You can flee to the \nSOUTH or push on to the EAST." },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "D3" },
+                                "menu2": { "S": "Move South" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "E2" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "0"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "D3" },
+                                "roomDesc": { "S": "You feel trapped! Skeletons lurk \nboth to the NORTH and to the WEST of you! \nBut you can take 'em, right?" },
+                                "menu1": { "S": "Move West" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "D2" },
+                                "menu2": { "S": "Move North" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "C3" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "D4" },
+                                "roomDesc": { "S": "Having bested all the skeletons \nto the EAST, you feel surprises await to the SOUTH!" },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "D5" },
+                                "menu2": { "S": "Move South" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "E4" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "D5" },
+                                "roomDesc": { "S": "More skeletons? This dungeon most have once been home to \na Necromancer! The WEST looks free of the fiends while the NORTH \nis where you fought many before." },
+                                "menu1": { "S": "Move West" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "D4" },
+                                "menu2": { "S": "Move North" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "C5" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "0"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "E1" },
+                                "roomDesc": { "S": "The nest of a great winged beast \nhinders further passage to the EAST but you can run to the NORTH" },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "E2" },
+                                "menu2": { "S": "Move North" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "D1" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "0"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "0" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "E2" },
+                                "roomDesc": { "S": "You sense a long fight ahead \nof you as you come from the WEST. To the NORTH await many foes!" },
+                                "menu1": { "S": "Move West" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "E1" },
+                                "menu2": { "S": "Move North" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "D2" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+				"searched": {"N": "1" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "E3" },
+                                "roomDesc": { "S": "A room filled with books and scrolls \nand wonderous artifacts! No wonder it was hidden! You can always exit to the \nEAST again through the hidden bookcase entrance." },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "E4" },
+                                "menu2": { "S": "Rest" },
+                                "menu2Type": { "S": "rest" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "0" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "E4" },
+                                "roomDesc": { "S": "You round the corner into a room with a \nbookcase to the west and a heavy iron door to the EAST. Snarling \nnoises come from the EAST. The NORTH passage remains open." },
+                                "menu1": { "S": "Move East" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "E5" },
+                                "menu2": { "S": "Move North" },
+                                "menu2Type": { "S": "move" },
+                                "menu2NewId": { "S": "D4" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu3NewId": { "S": "E3" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "1"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "0" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "E5" },
+                                "roomDesc": { "S": "A great room with only one door to the WEST. \nThis is the lair of the dragon that rules over this dungeon!" },
+                                "menu1": { "S": "Move West" },
+                                "menu1Type": { "S": "move" },
+                                "menu1NewId": { "S": "E4" },
+                                "menu2": { "S": "Rest" },
+                                "menu2Type": { "S": "rest" },
+                                "menu3": { "S": "Search" },
+                                "menu3Type": { "S": "search" },
+                                "menu4": { "S": "Exit To Main Menu" },
+                                "menu4Type": { "S": "quit" },
+                                "monsterDefeated": {"N": "0"},
+                                "explored": {"N": "0" },
+                                "searched": {"N": "0" }
+                                }
+                }
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "pydungeon": [
+	     {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "SVPT" },
+                                "currRoom": { "S": "" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "PC1" },
+                                "charType": { "S": "PC" },
+                                "charName": { "S": "Unnamed" },
+                                "maxHealth": { "N": "100" },
+                                "curHealth": { "N": "100" },
+                                "attkPower": { "N": "10" },
+                                "damage": { "N": "20" },
+                                "armorLevel": { "N": "40" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "NPCE5" },
+                                "charType": { "S": "Boss" },
+                                "charName": { "S": "Dragon" },
+                                "maxHealth": { "N": "300" },
+                                "curHealth": { "N": "300" },
+                                "attkPower": { "N": "10" },
+                                "damage": { "N": "15" },
+                                "armorLevel": { "N": "70" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "NPCE1" },
+                                "charType": { "S": "Boss" },
+                                "charName": { "S": "Gryphon" },
+                                "maxHealth": { "N": "200" },
+                                "curHealth": { "N": "200" },
+                                "attkPower": { "N": "20" },
+                                "damage": { "N": "10" },
+                                "armorLevel": { "N": "60" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "NPCB5" },
+                                "charType": { "S": "Boss" },
+                                "charName": { "S": "Bat Swarm" },
+                                "maxHealth": { "N": "100" },
+                                "curHealth": { "N": "100" },
+                                "attkPower": { "N": "25" },
+                                "damage": { "N": "5" },
+                                "armorLevel": { "N": "70" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "NPCA4" },
+                                "charType": { "S": "Minion" },
+                                "charName": { "S": "Skeleton" },
+                                "maxHealth": { "N": "50" },
+                                "curHealth": { "N": "50" },
+                                "attkPower": { "N": "5" },
+                                "damage": { "N": "5" },
+                                "armorLevel": { "N": "30" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "NPCB1" },
+                                "charType": { "S": "Minion" },
+                                "charName": { "S": "Skeleton" },
+                                "maxHealth": { "N": "50" },
+                                "curHealth": { "N": "50" },
+                                "attkPower": { "N": "5" },
+                                "damage": { "N": "5" },
+                                "armorLevel": { "N": "30" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "NPCC3" },
+                                "charType": { "S": "Minion" },
+                                "charName": { "S": "Skeleton" },
+                                "maxHealth": { "N": "50" },
+                                "curHealth": { "N": "50" },
+                                "attkPower": { "N": "5" },
+                                "damage": { "N": "5" },
+                                "armorLevel": { "N": "30" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "NPCD2" },
+                                "charType": { "S": "Minion" },
+                                "charName": { "S": "Skeleton" },
+                                "maxHealth": { "N": "50" },
+                                "curHealth": { "N": "50" },
+                                "attkPower": { "N": "5" },
+                                "damage": { "N": "5" },
+                                "armorLevel": { "N": "30" }
+                                }
+                }
+        },
+        {
+                "PutRequest": {
+                        "Item": {
+                                "attrId": { "S": "NPCD5" },
+                                "charType": { "S": "Minion" },
+                                "charName": { "S": "Skeleton" },
+                                "maxHealth": { "N": "50" },
+                                "curHealth": { "N": "50" },
+                                "attkPower": { "N": "5" },
+                                "damage": { "N": "5" },
+                                "armorLevel": { "N": "30" }
+                                }
+                }
+        }
+    ]
+}
